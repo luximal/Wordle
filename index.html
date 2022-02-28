@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css?ver=002">
+	<script src="app.js"></script>
+	<title>Игра Wordle (Вордли) на русском без ограничений!</title>
+</head>
+<body>
+	<div class="container">
+		<header class="header">
+			<div class="menu">
+			<!-- <button id="help-button" class="icon" data-key="help">?</button> -->
+			</div>
+			<div class="title">WORDLE (RU)</div>
+			<div class="menu">
+			<!-- <button id="statistics-button" class="icon" data-key="statistics">📈</button> -->
+				<button id="settings-button" class="icon" data-key="settings">☰</button>
+			</div>
+		</header>
+		<main class="field">
+			<div class="alert"></div>
+			<div class="wrap">
+				<div class="row">
+					<div class="cell"></div>
+					<div class="cell"></div>
+					<div class="cell"></div>
+					<div class="cell"></div>
+					<div class="cell"></div>
+				</div>
+				<div class="row">
+					<div class="cell"></div>
+					<div class="cell"></div>
+					<div class="cell"></div>
+					<div class="cell"></div>
+					<div class="cell"></div>
+				</div>
+				<div class="row">
+					<div class="cell"></div>
+					<div class="cell"></div>
+					<div class="cell"></div>
+					<div class="cell"></div>
+					<div class="cell"></div>
+				</div>
+				<div class="row">
+					<div class="cell"></div>
+					<div class="cell"></div>
+					<div class="cell"></div>
+					<div class="cell"></div>
+					<div class="cell"></div>
+				</div>
+				<div class="row">
+					<div class="cell"></div>
+					<div class="cell"></div>
+					<div class="cell"></div>
+					<div class="cell"></div>
+					<div class="cell"></div>
+				</div>
+				<div class="row">
+					<div class="cell"></div>
+					<div class="cell"></div>
+					<div class="cell"></div>
+					<div class="cell"></div>
+					<div class="cell"></div>
+				</div>
+			</div>
+		</main>
+		<div class="keyboard">
+			<div class="keyboard_row">
+				<button class="key" data-key="й">й</button>
+				<button class="key" data-key="ц">ц</button>
+				<button class="key" data-key="у">у</button>
+				<button class="key" data-key="к">к</button>
+				<button class="key" data-key="е">е</button>
+				<button class="key" data-key="н">н</button>
+				<button class="key" data-key="г">г</button>
+				<button class="key" data-key="ш">ш</button>
+				<button class="key" data-key="щ">щ</button>
+				<button class="key" data-key="з">з</button>
+				<button class="key" data-key="х">х</button>
+				<button class="key" data-key="ъ">ъ</button>
+			</div>
+			<div class="keyboard_row">
+				<button class="key" data-key="ф">ф</button>
+				<button class="key" data-key="ы">ы</button>
+				<button class="key" data-key="в">в</button>
+				<button class="key" data-key="а">а</button>
+				<button class="key" data-key="п">п</button>
+				<button class="key" data-key="р">р</button>
+				<button class="key" data-key="о">о</button>
+				<button class="key" data-key="л">л</button>
+				<button class="key" data-key="д">д</button>
+				<button class="key" data-key="ж">ж</button>
+				<button class="key" data-key="э">э</button>
+			</div>
+			<div class="keyboard_row">
+				<button class="key" data-key="delete">⌫</button>
+				<button class="key" data-key="я">я</button>
+				<button class="key" data-key="ч">ч</button>
+				<button class="key" data-key="с">с</button>
+				<button class="key" data-key="м">м</button>
+				<button class="key" data-key="и">и</button>
+				<button class="key" data-key="т">т</button>
+				<button class="key" data-key="ь">ь</button>
+				<button class="key" data-key="б">б</button>
+				<button class="key" data-key="ю">ю</button>
+				<button class="key" data-key="enter">ВВОД</button>
+			</div>
+		</div>
+	</div>
+	<div class="overlay">
+		<div class="modal">
+			<div class="modal_close">⛌</div>
+			<div class="modal_title"></div>
+			<div class="modal_board"></div>
+			<div class="modal_solution">Загаданное слово: <span class="modal_word"></span></div>
+			<div class="modal_choice">Ещё разок?
+			<!-- 	<span class="modal_decline close">✗</span> -->
+				<span class="modal_accept">✓</span>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
