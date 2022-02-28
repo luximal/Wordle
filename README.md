@@ -1,2 +1,2 @@
 # Wordle-Simple
-Simple wordle without restrictions!
+Simple Wordle clone without restrictions. You can play forever!
