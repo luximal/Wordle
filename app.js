@@ -221,7 +221,6 @@ document.addEventListener("DOMContentLoaded", () => {
 	}
 
 
-
 	function gameReset(){
 		document.querySelector('.overlay').classList.remove("overlay_show")
 
