@@ -18,6 +18,10 @@ document.addEventListener("DOMContentLoaded", () => {
 		document.querySelector('.overlay').classList.remove("overlay_show")
 	});
 
+	document.getElementById('help-button').onclick = function() {
+		document.querySelector('.instructions').classList.toggle("instructions_show");
+	};
+
 	const keys = document.querySelectorAll(".key")
 	for (let i = 0; i < keys.length; i++) {
 		keys[i].onclick = ({ target }) => {
@@ -208,17 +212,17 @@ document.addEventListener("DOMContentLoaded", () => {
 		})
 
 		let title = document.querySelector('.modal_title')
-		if (gameStatus == 1) {
-			title.textContent = 'Поздравляем!  ' + '  Уровень #' + level
-			document.querySelector('.modal_solution').style.display="none"
-		} else {
+		if (gameStatus == 1) {title.textContent = 'Поздравляем!  ' + '  Уровень #' + level}
+		else {
 			title.textContent = 'Вы проиграли!  ' + '  Уровень #' + level
 			document.querySelector('.modal_word').textContent = currentWord
 			document.querySelector('.modal_solution').style.display="block"
 		}
+		document.querySelector('.modal_solution').style.display="none"
 		document.querySelector('.modal_board').textContent = elHTML
 		document.querySelector('.overlay').classList.add("overlay_show")
 	}
+
 
 
 	function gameReset(){

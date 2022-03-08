@@ -11,17 +11,32 @@
 	<div class="container">
 		<header class="header">
 			<div class="menu">
-			<!-- <button id="help-button" class="icon" data-key="help">?</button> -->
+				<button id="help-button" class="help-icon">?</button>
 			</div>
 			<div class="title">WORDLE (RU)</div>
-			<div class="menu">
-			<!-- <button id="statistics-button" class="icon" data-key="statistics">📈</button> -->
-				<button id="settings-button" class="icon" data-key="settings">☰</button>
-			</div>
+
+
+				<div class="menu">
+					<input id="menu__toggle" type="checkbox" />
+					<label class="menu__btn" for="menu__toggle">
+					  <span></span>
+					</label>
+
+					<ul class="menu__box">
+						<li><a class="menu__item" href="https://luximal.github.io/Wordle">Home</a></li>
+						<li><a class="menu__item" href="#">--- #1</a></li>
+						<li><a class="menu__item" href="#">--- #2</a></li>
+						<li><a class="menu__item" href="#">--- #3</a></li>
+						<li><a class="menu__item" href="https://github.com/luximal/Wordle">GitHub</a></li>
+					</ul>
+				</div>
+
+
+
 		</header>
 		<main class="field">
 			<div class="alert"></div>
-			<div class="wrap">
+			<div class="field_wrap">
 				<div class="row">
 					<div class="cell"></div>
 					<div class="cell"></div>
@@ -121,5 +136,48 @@
 			</div>
 		</div>
 	</div>
+
+
+
+	<div class="instructions">
+		<div class="instructions_wrap">
+			<p>Угадай <b>СЛОВО</b> с шести попыток.</p>
+			<p>Ваша догадка должна быть словом из пяти букв.</p>
+			<p>После каждого предположения, цвет плиток изменится, чтобы показать, насколько близка ваша догадка.</p>
+			<div class="example">
+				<div class="row">
+					<div class="cell">С</div>
+					<div class="cell">К</div>
+					<div class="cell">О</div>
+					<div class="cell green">Б</div>
+					<div class="cell">А</div>
+				</div>
+				<p>Буква <b>Б</b> есть в слове и на своем месте</p>
+			</div>
+			<div class="example">
+				<div class="row">
+					<div class="cell">П</div>
+					<div class="cell">О</div>
+					<div class="cell">Л</div>
+					<div class="cell yellow">К</div>
+					<div class="cell">А</div>
+				</div>
+				<p>Буква <b>К</b> есть в слове, но в другом месте.</p>
+			</div>
+			<div class="example">
+				<div class="row">
+					<div class="cell gray">П</div>
+					<div class="cell">И</div>
+					<div class="cell">Р</div>
+					<div class="cell">А</div>
+					<div class="cell">Т</div>
+				</div>
+				<p>Буквы <b>П</b> нет в загаданном слове.</p>
+			</div>
+			<p><br><b>Играйте без ограничений!</b></p>
+		</div>
+	</div>
+
 </body>
 </html>
+
