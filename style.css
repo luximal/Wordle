@@ -393,7 +393,7 @@ body {
 	align-items: center;
 
 	opacity: 0;
-	left: 0;
+	left: -100%;
 	top: 0;
 	background: #fff;
 	font-size: clamp(.9rem, 2.5vw, 1.2rem);
@@ -411,6 +411,7 @@ body {
 }
 .instructions_show{
 	opacity: .9;
+	left: 0;
 }
 .example{
 	width: 100%;
