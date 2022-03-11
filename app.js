@@ -109,19 +109,12 @@ document.addEventListener("DOMContentLoaded", () => {
 				let curKey = document.querySelector('[data-key=' + letter + ']')
 
 				if (currentWord.charAt(index) == letter) {	// correct
-
 					curCell.classList.add('green', 'flip')
 					 curKey.classList.add('green')
-
-
 				} else if (currentWord.includes(letter)) {	// wrong-location
-
 					curCell.classList.add('yellow', 'flip')
 					 curKey.classList.add('yellow')
-
-
 				} else {									// wrong
-
 					curCell.classList.add('gray', 'flip')
 					 curKey.classList.add('gray')
 				}
@@ -165,7 +158,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	 */
 	function getNewWord() {
 		var currentWord = riddle[Math.floor(Math.random() * riddle.length)];
-			currentWord = 'аббат'	//	Manual setting words
+		//	currentWord = 'аббат'	//	Manual setting words
 		localStorage.setItem('word', currentWord)
 		localStorage.setItem('gameStatus', [])
 		localStorage.setItem('userWords', [])
