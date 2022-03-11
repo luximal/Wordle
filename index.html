@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="style.css?ver=003">
+	<link rel="stylesheet" type="text/css" href="style.css?ver=001">
 	<script src="app.js"></script>
 	<title>Игра Wordle (Вордли) на русском без ограничений!</title>
 </head>
@@ -11,28 +11,22 @@
 	<div class="container">
 		<header class="header">
 			<div class="menu">
-				<button id="help-button" class="help-icon">?</button>
+				<div class="help-icon">?</div>
 			</div>
 			<div class="title">WORDLE (RU)</div>
-
-
-				<div class="menu">
-					<input id="menu__toggle" type="checkbox" />
-					<label class="menu__btn" for="menu__toggle">
-					  <span></span>
-					</label>
-
-					<ul class="menu__box">
-						<li><a class="menu__item" href="https://luximal.github.io/Wordle">Home</a></li>
-						<li><a class="menu__item" href="#">--- #1</a></li>
-						<li><a class="menu__item" href="#">--- #2</a></li>
-						<li><a class="menu__item" href="#">--- #3</a></li>
-						<li><a class="menu__item" href="https://github.com/luximal/Wordle">GitHub</a></li>
-					</ul>
-				</div>
-
-
-
+			<div class="menu">
+				<input id="menu__toggle" type="checkbox" />
+				<label class="menu__btn" for="menu__toggle">
+				  <span></span>
+				</label>
+				<ul class="menu__box">
+					<li><a class="menu__item" href="https://luximal.github.io/Wordle">Home</a></li>
+					<li><a class="menu__item" href="#">--- #1</a></li>
+					<li><a class="menu__item" href="#">--- #2</a></li>
+					<li><a class="menu__item" href="#">--- #3</a></li>
+					<li><a class="menu__item" href="https://github.com/luximal/Wordle">GitHub</a></li>
+				</ul>
+			</div>
 		</header>
 		<main class="field">
 			<div class="alert"></div>
@@ -136,9 +130,6 @@
 			</div>
 		</div>
 	</div>
-
-
-
 	<div class="instructions">
 		<div class="instructions_wrap">
 			<p>Угадай <b>СЛОВО</b> с шести попыток.</p>
