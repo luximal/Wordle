@@ -229,15 +229,16 @@ body {
 	height: 100%;
 	justify-content: center;
 	align-items: center;
-	left: 50%;
+	left: -100%;
 	top: 50%;
 	transform: translate(-50%,-50%);
 	background: #fffa;
 	z-index: 3000;
 	opacity: 0;
-	transition: .5s;
+	transition: opacity .5s;
 }
 .overlay_show {
+	left: 50%;
 	opacity: 1;
 }
 .modal {
@@ -253,7 +254,7 @@ body {
 }
 
 .modal_title {
-	padding: 10px 0;
+	padding: 20px 0 10px;
 	white-space: pre;
 }
 
